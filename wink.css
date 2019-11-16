@@ -1,0 +1,564 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+	height: 100%;
+}
+
+
+	.navy {
+	    overflow: hidden;
+	    background-color: lightgrey;
+	    font-family: cursive;
+			background-attachment: fixed;
+			font-weight: bold;
+
+	}
+#home {
+	background-color: orange;
+	background-image: url("home.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	color: black;
+	}
+#home:hover {
+	background: black;
+	transition: transform 0.1s;
+	transition: 0.5s ease;
+	transform: scale(1.2);
+	color: white;
+	background-image: url("home.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+}
+
+#off {
+	background-image: url("offer.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+}
+#off:hover {
+	transition: transform 0.1s;
+	transition: 0.5s ease;
+	transform: scale(1.2);
+}
+	.navy a {
+	    float: left;
+	    font-size: 16px;
+	    color: black;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	}
+
+	.gender {
+	    float: left;
+	    overflow: hidden;
+	}
+
+	.gender #m {
+	    font-size: 15px;
+	    border: none;
+	    outline: none;
+	    color: blue;
+	    padding: 14px 16px;
+	    background-color: inherit;
+	    font-family: inherit;
+	    margin: 0;
+	    font-weight: bold;
+	    background-image: url("male.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	}
+	.gender #w {
+	    font-size: 16px;
+	    border: none;
+	    outline: none;
+	    color: deeppink;
+	    padding: 14px 16px;
+	    background-color: inherit;
+	    font-family: inherit;
+	    margin: 0;
+	    font-weight: bold;
+	    background-image: url("female.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	}
+	.gender #contact {
+	    font-size: 16px;
+	    border: none;
+	    outline: none;
+	    padding: 14px 16px;
+	    background-color: inherit;
+	    font-family: inherit;
+	    margin: 0;
+	    font-weight: bold;
+	    background-image: url("contact.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	}
+	.navy a:hover {
+	    background-color: black;
+			color: white;
+	}
+	.gender:hover #m {
+	    background-color: black;
+	    color: white;
+			transition: transform 0.1s;
+	transition: 0.5s ease;
+	transform: scale(1.2);
+	border-radius: 20%;
+	}
+
+	.gender:hover #w {
+	    background-color: black;
+	    color: white;
+			transition: transform 0.1s;
+	transition: 0.5s ease;
+	transform: scale(1.2);
+	}
+	.gender:hover #contact {
+		background-color: black;
+		color: white;
+		transition: transform 0.1s;
+	transition: 0.5s ease;
+	transform: scale(1.2);
+	}
+	.me {
+	    display: none;
+	    position: absolute;
+	    background-color: black;
+	    min-width: 500px;
+	    box-shadow: 0px 10px 10px 0px;
+	    z-index: 1;
+	    border-radius: 0 50px 50px 50px;
+	}
+
+	.me .a1:hover {
+		border-radius: 0 50px 0 0;
+	}
+	.me .a3:hover {
+		border-radius: 0 0 50px 50px;
+
+	}
+
+	.me a {
+	    float: none;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: left;
+	    color: white;
+	}
+
+	.me a:hover {
+		background-color: white;
+	    color: black;
+	}
+
+	.gender:hover .me {
+	    display: block;
+	}
+	.we {
+	    display: none;
+	    position: absolute;
+	    background-color: black;
+	    min-width: 500px;
+	    box-shadow: 0px 10px 10px 0px;
+	    z-index: 1;
+	    border-radius: 0 50px 50px 50px;
+	}
+
+	.we a {
+	    float: none;
+	    color: white;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: left;
+	}
+
+	.we a:hover {
+	    background-color: white;
+	    color: black;
+	}
+
+	.we .a1:hover {
+		border-radius: 0 50px 0 0;
+	}
+	.we .a3:hover {
+		border-radius: 0 0 50px 50px;
+
+	}
+
+	.gender:hover .we {
+	    display: block;
+	}
+
+	.con {
+	  display: none;
+	  position: absolute;
+	  z-index: 1;
+	  min-width: 300px;
+		background-color: black;
+		box-shadow: 0px 10px 10px 0px;
+		border-radius: 0 50px 50px 50px;
+	}
+	.con a {
+	  float: none;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  color: white;
+	  text-align: left;
+	}
+	.con a:hover {
+	  background-color: white;
+	  color: black;
+	}
+
+	.con .a1:hover {
+		border-radius: 0 50px 0 0;
+	}
+	.con .a3:hover {
+		border-radius: 0 0 50px 50px;
+
+	}
+
+.gender:hover .con {
+	display: block;
+}
+#log1 {
+	background-image: url("login.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+}
+.my {
+	height: 450px;
+	width: 84%;
+	margin: 0px 100px;
+}
+.section {
+	position: relative;
+}
+.sec {
+	display: none;
+}
+.fade {
+	-webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.mar {
+	border: double red 7px;
+}
+.fo {
+    padding: 10px;
+    background: #ddd;
+    background-color: black;
+    opacity: 0.8;
+}
+.fo .cop {
+    text-align: left;
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+}
+.soc {
+	float: right;
+	margin-left: 10px;
+	background-image: grey;
+	border: none;
+	color: white;
+	padding: 12px 16px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 40%;
+}
+.soc:hover {
+	background-color: royalblue;
+}
+
+.icon-bar a {
+    position: fixed;
+    left: -80px;
+    transition: 0.3s;
+    margin-top: 20%;
+    padding: 15px;
+    width: 80px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 100px 100px 0px;
+    font-weight: bold;
+}
+
+.icon-bar a:hover {
+    left: 0;
+}
+#facebook {
+    top: 20px;
+    background-color: royalblue;
+}
+
+#twitter {
+    top: 80px;
+    background-color: aqua;
+}
+
+#google {
+    top: 140px;
+    background-color: orangered;
+    color: white;
+}
+
+#linkedin {
+    top: 200px;
+    background-color: navy;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: grey;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+.profile {
+	opacity: 0.5;
+	clear: both;
+	margin-top: 124px;
+	box-shadow: 0 4px 8px 0;
+	max-width: 300px;
+	text-align: center;
+	float: right;
+	cursor: pointer;
+}
+.profile:hover {
+	transition: 1.2s ease;
+	opacity: 1;
+}
+.profile b{
+	text-decoration: underline;
+}
+.title {
+	color: grey;
+	font-size: 18px;
+	font-family: 'Inconsolata', monospace;
+}
+.profile h1 {
+	transition: transform 0.1s;
+	transition: 1.0s ease;
+}
+.profile h1:hover {
+	transform: scale(1.2);
+	color:grey;
+}
+.profile b:hover {
+	color: red;
+}
+#conbt  {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: whitesmoke;
+	background-color: black;
+	text-align: center;
+	cursor: pointer;
+	width: 94.5%;
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: 'Inconsolata', monospace;
+}
+#conbt:hover {
+	transition: 0.4s ease;
+	background-color: red;
+	opacity: 1;
+}
+/*Css For Table Class Tab */
+.tab {
+	margin-top: 100px;
+	float: left;
+	box-shadow: 0 5px 5px 0;
+	font-family: sans-serif;
+}
+tr:nth-child(even) {
+	background-color: gray;
+	color: yellow;
+}
+tr:nth-child(odd) {
+	background-color: lightgreen;
+	color: red;
+}
+.tabw {
+	margin-left: 50px;
+	margin-top: 100px;
+	float: left;
+	box-shadow: 0 5px 5px 0;
+	font-family: sans-serif;
+}
+
+.alitable {
+	margin-left: 370px;
+}
+
+#email {
+	margin-top: 500px;
+	padding: 50px 60px;
+	background-size: 1000px;
+	background-position: center;
+	background-image: url("photo.jpg");
+	height: 300px;
+}
+#email h3 {
+	margin-left: 550px;
+	color: white;
+}
+#email b {
+	margin-left: 455px;
+	color: white;
+	text-decoration: underline;
+}
+#email input[type="email"] {
+	margin-left: 450px;
+	width: 350px;
+	height: 30px;
+	font-size: 18px;
+	background-color: lightgrey;
+	border: 0;
+	border-bottom: 2px black solid;
+	border-radius: 30px;
+	box-shadow: 15px 5px 10px 0px;
+	padding-left: 10px;
+}
+
+#email input[type="button"] {
+	position: relative;
+	margin-left: 0;
+	border: 0;
+	height: 34px;
+	font-weight: bold;
+	background-color: royalblue;
+	border-radius: 30px;
+	cursor: pointer;
+	color: white;
+	box-shadow: 0px 0px 3px 3px;
+}
+
+#email input[type="button"]:hover {
+	background-color: white;
+	transition: transform 0.1s;
+	transition: 1.0s ease;
+	color: blue;
+}
+.email1 {
+	margin-top: 150px;
+}
+
+.sec {
+	position: relative;
+}
+.sec .sect {
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	margin-left: 100px;
+    background-color: black;
+    color: white;
+		width: 30%;
+		padding-left: 375px;
+		padding-right: 360px;
+		opacity: 0.7;
+		padding-bottom: 10px;
+}
+.sect h2 {
+	margin-left: 0px;
+}
+
+.footer {
+	background: black;
+	width: 100%;
+	height: 500px;
+	margin-bottom: 0;
+	margin-top: 555px;
+	opacity: 0.9;
+}
+.foot1 {
+	padding: 50px 80px;
+	display: inline-block;
+}
+.ab {
+	margin-right: 900px;
+	font-family: 'Inconsolata', monospace;
+	letter-spacing: 1px;
+	position: absolute;
+	color: lightgrey;
+}
+.ab h2{
+	color: white;
+}
+.foot1 h2{
+	padding-bottom: 20px;
+	border-bottom: dotted lightgrey 1px; 
+}
+.bc {
+	clear: both;
+	margin-left: 500px;
+	margin-right: 330px;
+	font-family: 'Inconsolata', monospace;
+	letter-spacing: 1px;
+	color: lightgrey;
+}
+.bc h2{
+	color: white;
+}
+
+.bc a{
+	text-decoration: none;
+	color: #FFF9C4;
+	letter-spacing: 1px;
+}
+.bc a:hover{
+	color: royalblue;
+	transition: 1.2s ease;
+}
+#button1 {
+	padding: 8px 20px;
+	margin-left: 100px;
+	margin-top: 10px;
+	background: grey;
+	font-weight: bold;
+	color: white;
+}
+#button1 a:hover{
+	color: lightgrey;
+}

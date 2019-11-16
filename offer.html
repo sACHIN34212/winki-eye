@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>www.winkieye.com</title>
+<style type="text/css">
+ body {
+  margin: 0px 0px 0px 0px;
+  background-color: white;
+  background-attachment: fixed;
+}
+  .navy {
+      overflow: hidden;
+      background-color: lightgrey;
+      font-family: cursive;
+      background-attachment: fixed;
+      font-weight: bold;
+  }
+#home {
+  background-color: orange;
+  background-image: url("home.png");
+  background-position: top;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  color: black;
+  }
+#home:hover {
+  background: black;
+  transition: transform 0.1s;
+  transition: 0.5s ease;
+  transform: scale(1.2);
+  color: white;
+  background-image: url("home.png");
+  background-position: top;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+#stor {
+  background-image: url("offer.png");
+  background-position: top;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  border-left: solid 6px black;
+}
+
+#stor:hover {
+  transition: transform 0.1s;
+  transition: 0.5s ease;
+  transform: scale(1.2);
+
+}
+  .navy a {
+      float: left;
+      font-size: 16px;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  .gender {
+      float: left;
+      overflow: hidden;
+  }
+
+  .gender #m {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: blue;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+      font-weight: bold;
+      background-image: url("male.png");
+  background-position: top;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  }
+  .gender #w {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: deeppink;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+      font-weight: bold;
+      background-image: url("female.png");
+  background-position: top;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  }
+  .gender #contact {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+      font-weight: bold;
+      background-image: url("contact.png");
+  background-position: top;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  }
+  .navy a:hover {
+      background-color: black;
+      color: white;
+  }
+  .gender:hover #m {
+      background-color: black;
+      color: white;
+      transition: transform 0.1s;
+  transition: 0.5s ease;
+  transform: scale(1.2);
+  }
+
+  .gender:hover #w {
+      background-color: black;
+      color: white;
+      transition: transform 0.1s;
+  transition: 0.5s ease;
+  transform: scale(1.2);
+  }
+  .gender:hover #contact {
+    background-color: black;
+    color: white;
+    transition: transform 0.1s;
+  transition: 0.5s ease;
+  transform: scale(1.2);
+  }
+  .me {
+      display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 500px;
+      box-shadow: 0px 10px 10px 0px;
+      z-index: 1;
+	   border-radius: 0 50px 50px 50px;
+  }
+
+  .me a {
+      float: none;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      color: white;
+  }
+
+  .me a:hover {
+      background-color: lightblue;
+      color: black;
+  }
+  
+  .me .a1:hover {
+		border-radius: 0 50px 0 0;
+	}
+	.me .a3:hover {
+		border-radius: 0 0 50px 50px;
+
+	}
+
+  .gender:hover .me {
+      display: block;
+  }
+  .we {
+      display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 500px;
+      box-shadow: 0px 10px 10px 0px;
+      z-index: 1;
+	  border-radius: 0 50px 50px 50px;
+  }
+
+  .we a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+  }
+
+  .we a:hover {
+      background-color: pink;
+      color: black;
+  }
+  
+  .we .a1:hover {
+		border-radius: 0 50px 0 0;
+	}
+	.we .a3:hover {
+		border-radius: 0 0 50px 50px;
+
+	}
+
+  .gender:hover .we {
+      display: block;
+  }
+
+  .con {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 300px;
+    background-color: black;
+    box-shadow: 0px 10px 10px 0px;
+	 border-radius: 0 50px 50px 50px;
+  }
+  .con a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: left;
+  }
+  .con a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .con .a1:hover {
+		border-radius: 0 50px 0 0;
+	}
+	.con .a3:hover {
+		border-radius: 0 0 50px 50px;
+
+	}
+	
+.gender:hover .con {
+  display: block;
+}
+#stor {
+  background-color: yellow;
+  font-weight: bold;
+}
+#stor:hover {
+  background-color: black;
+}
+/*Offer Code */
+.coupon {
+    border: 5px dashed darkgrey;
+    width: 30%; 
+    border-radius: 15px; 
+    margin-left: 80px;
+    max-width: 300px;
+    max-height: 300px; 
+    font-size: 10px;
+    margin-top: 30px; 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.9), 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+    margin-right: 50px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.container {
+    padding: 2px 5px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+}
+
+.promo {
+    background: black;
+    padding: 3px;
+    font-weight: bold;
+    color: white;
+}
+
+.expire {
+    color: red;
+}
+.fo {
+  margin: 30px 0 0 0;
+    padding: 10px;
+    background-color: black;
+    opacity: 0.8;
+}
+.fo .cop {
+    text-align: left;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+#log1 {
+  background-image: url("login.png");
+  background-position: top;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: grey;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+</style>
+</head>
+
+<body>
+	<div style="background-image: url(36166597-retro-comic-book-style-cartoon-spectacles.jpg);background-size: 200px 100px;background-position: left;background-repeat: no-repeat;background-color: white">
+	<a href="winkieye.html"><img src="win.jpg" width="150px" height="100px" hspace="43%"></a></div>
+	<div class="navy">
+		<a href="winkieye.html" id="home">HOME</a>
+    <div class="gender">
+    <button id="m">MEN
+    </button>
+    <div class="me">
+      <a href="page1ofwinkieye.html" class="a1"><b>Eyeglasses</b></a>
+      <a href="sunglasspage.html" class="a2"><b>Sunglasses</b></a>
+      <a href="prescription.html" class="a3">Prescription <b>Sunglasses</b></a>
+    </div>
+  </div>
+  <div class="gender">
+    <button id="w">WOMEN
+    </button>
+    <div class="we">
+      <a href="page2wome.html" class="a1"><b>Eyeglasses</b></a>
+      <a href="sunglasswom.html" class="a2"><b>Sunglasses</b></a>
+      <a href="prescriptionwom.html" class="a3">Prescription <b>Sunglasses</b></a>
+    </div>
+  </div>
+  <a href="offer.html" id="stor">OFFERS</a>
+	<div class="gender">
+		<button id="contact">CONTACT US</button>
+	<div class="con">
+		<a href="callus.html" class="a1">Call us</a>
+		<a href="chatwithus.html" class="a3">Chat with us</a>
+	</div>
+</div>
+<a href="log.html" style="float: right;background-color: red;font-family: Trebuchet MS,Helvetica,sans-serif;padding: 16px 12px;" id="log1"><b>LOGIN/SIGNUP</b></a>
+</div>
+<div id="coup">
+<div class="coupon">
+  <img src="win.jpg" alt="Winkieye" height="150px" style="width:100%;">
+  <div class="container" style="background-color: lightgreen;border-radius: 4px;">
+    <h2 style="background-color: lightgrey;margin: 0;color: blue;"><b>Buy 1 Get 1 Free and 20% extra cashback-</b></h2> 
+    <p>Buy any 1 eyeglasse and get second eyeglass free on your first booking.Get 20% extra cashback also.</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">WINKIEYE</span></p>
+    <p class="expire"><b>Expires:</b> After use once</p>
+  </div>
+</div>
+
+<div class="coupon">
+  <img src="coupon/uber.jpg" alt="Uber" height="150px" style="width:100%;">
+  <div class="container" style="background-color: grey;border-radius: 4px;">
+    <h2 style="background-color: lightgreen;margin: 0;color: blue;"><b>Get 5 Rides Free-</b></h2> 
+    <p>Buy any two eyeglasses or sunglasses and get free rides on UBER app.
+    Download UBER app and enjoy.</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">WINK2GET</span></p>
+    <p class="expire"><b>Expires:</b> OCT 23, 2019</p>
+  </div>
+</div>
+
+<div class="coupon">
+  <img src="coupon/phonepay.png" alt="Phonepay" height="150px" style="width:100%;">
+  <div class="container" style="background-color: violet;border-radius: 4px;">
+    <h2 style="background-color: lightcyan;margin: 0;color: blue;"><b>Get 20% Cashback,Pay With UPI-</b></h2> 
+    <p>Don't Worry! On booking of single eyeglass you can get 20% cashback too.Do payment through Phonepay UPI.</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">WINUPI20</span></p>
+    <p class="expire"><b>Expires:</b> DEC 31, 2018</p>
+  </div>
+</div>
+
+<div class="coupon">
+  <img src="coupon/freecharge.jpg" alt="Freecharge" height="150px" style="width:100%;">
+  <div class="container" style="background-color: lightblue;border-radius: 4px;">
+    <h2 style="background-color: orangered;margin: 0;color: blue;"><b>Get &#8377;550 in your freecharge wallet-</b></h2> 
+    <p>On booking of &#8377;500 or above &#8377;500 prescription eyeglasses,you will get &#8377;550 in your freecharge wallet.Payment should be through freecharge.</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">FREEWINK500</span></p>
+    <p class="expire"><b>Expires:</b> FEB 02, 2020</p>
+  </div>
+</div>
+
+<div class="coupon">
+  <img src="coupon/myntra.jpg" alt="Myntra" height="150px" style="width:100%;">
+  <div class="container" style="background-color: orange;border-radius: 4px;">
+    <h2 style="background-color: violet;margin: 0;color: blue;"><b>Get 70% Off On Sarees On Myntra App-</b></h2> 
+    <p>By using the promo code(given at the bottom),You can get coupon for myntra app to get 70% off on sarees.Buy any 3 sunglasses.</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">MYNTRAWINK</span></p>
+    <p class="expire"><b>Expires:</b> NOV 09, 2018</p>
+  </div>
+</div>
+
+<div class="coupon">
+  <img src="coupon/paytm.jpg" alt="Myntra" height="150px" style="width:100%;">
+  <div class="container" style="background-color: lightskyblue;border-radius: 4px;">
+    <h2 style="background-color: royalblue;margin: 0;color: darkblue;"><b>Get 100% Cashback On Paytm App-</b></h2> 
+    <p>By doing payment through paytm,you can get 100% cashback using below promocode.Maxcashback(&#8377;400)</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">PAYWINKI100</span></p>
+    <p class="expire"><b>Expires:</b> JAN 01, 2023</p>
+  </div>
+</div>
+
+</div>
+sss
+<div class="fo">
+      <a href="" class="cop">Copyright &copy; 2018 All right reserved</a>
+  </div>
+</body>
+</html>

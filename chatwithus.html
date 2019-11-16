@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>www.winkieye.com/contact/chatwithus</title>
+<style>
+body {
+	margin: 0px 0px 0px 0px;
+	background-color: white;
+	background-attachment: fixed;
+}
+	.navy {
+	    overflow: hidden;
+	    background-color: lightgrey;
+	    font-family: cursive;
+			background-attachment: fixed;
+	}
+
+	.navy a {
+	    float: left;
+	    font-size: 16px;
+	    color: black;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	    font-weight: bold;
+	}
+    #home {
+	background-color: orange;
+	background-image: url("home.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	color: black;
+	}
+#home:hover {
+	background: black;
+	transition: transform 0.1s;
+	transition: 0.5s ease;
+	transform: scale(1.2);
+	color: white;
+	background-image: url("home.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+}
+
+#off {
+	background-image: url("offer.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+}
+	#off:hover {
+	transition: transform 0.1s;
+	transition: 0.5s ease;
+	transform: scale(1.2);
+}
+	.gender {
+	    float: left;
+	    overflow: hidden;
+	}
+
+	.gender .m {
+	    font-size: 16px;
+	    border: none;
+	    outline: none;
+	    color: blue;
+	    padding: 14px 16px;
+	    background-color: inherit;
+	    font-family: inherit;
+	    margin: 0;
+	    font-weight: bold;
+	    background-image: url("male.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	}
+	.gender .w {
+	    font-size: 16px;
+	    border: none;
+	    outline: none;
+	    color: deeppink;
+	    padding: 14px 16px;
+	    background-color: inherit;
+	    font-family: inherit;
+	    margin: 0;
+	    font-weight: bold;
+	    background-image: url("female.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	}
+	.navy a:hover {
+	    background-color: black;
+			color: white;
+	}
+	.gender:hover .m {
+	    background-color: black;
+	    color: white;
+			transition: transform 0.1s;
+	transition: 0.5s ease;
+	transform: scale(1.2);
+	}
+
+	.gender:hover .w {
+	    background-color: black;
+	    color: white;
+			transition: transform 0.1s;
+	transition: 0.5s ease;
+	transform: scale(1.2);
+	}
+	.me {
+	    display: none;
+	    position: absolute;
+	    background-color: black;
+	    min-width: 500px;
+	    box-shadow: 0px 10px 10px 0px;
+	    z-index: 1;
+		border-radius: 0 50px 50px 50px;
+	}
+
+	.me a {
+	    float: none;
+	    color: white;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: left;
+	}
+
+	.me a:hover {
+	    background-color: lightblue;
+	    color: black;
+	}
+	
+	.me .a1:hover {
+		border-radius: 0 50px 0 0;
+	}
+	.me .a3:hover {
+		border-radius: 0 0 50px 50px;
+
+	}
+
+	.gender:hover .me {
+	    display: block;
+	}
+	.we {
+	    display: none;
+	    position: absolute;
+	    background-color: black;
+	    min-width: 500px;
+	    box-shadow: 0px 10px 10px 0px;
+	    z-index: 1;
+		border-radius: 0 50px 50px 50px;
+	}
+
+	.we a {
+	    float: none;
+	    color: white;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: left;
+	}
+
+	.we a:hover {
+	    background-color: pink;
+	    color: black;
+	}
+
+	.gender:hover .we {
+	    display: block;
+	}
+	
+	.we .a1:hover {
+		border-radius: 0 50px 0 0;
+	}
+	.we .a3:hover {
+		border-radius: 0 0 50px 50px;
+
+	}
+	.gender #contact {
+		font-size: 16px;
+		border: none;
+		outline: none;
+		padding: 14px 16px;
+		background-color: yellow;
+		font-family: inherit;
+		font-weight: bold;
+		margin: 0;
+		font-weight: bold;
+		background-image: url("contact.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	border-left: solid 6px black;
+}
+.gender:hover #contact {
+	background-color: black;
+	color: white;
+	transition: transform 0.1s;
+	transition: 0.5s ease;
+	transform: scale(1.2);
+
+}
+.con {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	min-width: 300px;
+	background-color: black;
+	border-radius: 0 50px 50px 50px;
+}
+.con a {
+	float: none;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	color: white;
+	text-align: left;
+}
+.con a:hover {
+	background-color: white;
+	color: black;
+}
+
+.con .a1:hover {
+		border-radius: 0 50px 0 0;
+	}
+	.con .a3:hover {
+		border-radius: 0 0 50px 50px;
+
+	}
+.gender:hover .con {
+display: block;
+}
+
+/*Style For Message*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+input[type=submit] {
+    background-color: orangered;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: red;
+}
+.conta {
+    border-radius: 5px;
+    background-color: lightgreen;
+    padding: 20px;
+}
+.fo {
+    padding: 10px;
+    background: #ddd;
+    background-color: black;
+    opacity: 0.8;
+}
+.fo .cop {
+    text-align: left;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+#log1 {
+	background-image: url("login.png");
+	background-position: top;
+	background-size: 20px;
+	background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: grey;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+</style>
+</head>
+<body>
+	  <div style="background-image: url(36166597-retro-comic-book-style-cartoon-spectacles.jpg);background-size: 200px 100px;background-position: left;background-repeat: no-repeat;background-color: white">
+	<a href="winkieye.html"><img src="win.jpg" width="150px" height="100px" hspace="43%"></a></div>
+	<div class="navy">
+    <a href="winkieye.html" id="home">HOME</a>
+    <div class="gender">
+    <button class="m">MEN
+    </button>
+    <div class="me">
+      <a href="page1ofwinkieye.html" class="a1"><b>Eyeglasses</b></a>
+      <a href="sunglasspage.html" class="a2"><b>Sunglasses</b></a>
+      <a href="prescription.html" class="a3">Prescription <b>Sunglasses</b></a>
+    </div>
+  </div>
+  <div class="gender">
+    <button class="w">WOMEN
+    </button>
+    <div class="we">
+      <a href="page2wome.html" class="a1"><b>Eyeglasses</b></a>
+      <a href="sunglasswom.html" class="a2"><b>Sunglasses</b></a>
+      <a href="prescriptionwom.html" class="a3">Prescription <b>Sunglasses</b></a>
+    </div>
+  </div>
+  <a href="offer.html" id="off">OFFERS</a>
+  <div class="gender">
+		<button id="contact">CONTACT US</button>
+	<div class="con">
+		<a href="callus.html" class="a1">Call us</a>
+		<a href="chatwithus.html" class="a3">Chat with us</a>
+	</div>
+</div>
+<a href="log.html" style="float: right;background-color: red;font-family: Trebuchet MS,Helvetica,sans-serif;padding: 16px 12px;" id="log1"><b>LOGIN/SIGNUP</b></a>
+</div>
+
+<div class="conta">
+  <form action="" name="messform">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+    <label for="country">Country</label>
+    <select id="country" name="country" required>
+      <option value="australia">Australia</option>
+      <option value="canada">Brazil</option>
+      <option value="usa">Canada</option>
+      <option value="usa">Germany</option>
+      <option value="usa">Hong Kong</option>
+      <option value="usa">India</option>
+      <option value="usa">Japan</option>
+      <option value="usa">Russia</option>
+      <option value="usa">Singapore</option>
+      <option value="usa">United Kingdom</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="Message" placeholder="Write something.." style="height:200px" required></textarea>
+
+    <input type="submit" value="Submit" onclick="subm()">
+
+  </form>
+</div>
+<script type="text/javascript">
+	function subm()
+	{
+		var x=document.forms["messform"]["Message"].value;
+      if(x!=null && x!="")
+      {
+      	window.alert("Message sent successfully");
+      	return true;
+      }
+      else
+      {
+      	window.alert("Sorry! Message unsent.Write Something to send message.");
+      	return false;
+      }
+	}
+</script>
+
+<div class="fo">
+      <a href="#" class="cop">Copyright &copy; 2018 All right reserved</a>
+  </div>
+	</body>
+</html>

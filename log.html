@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>www.winkieye.com/login</title>
+<style>
+  .login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: lightgreen;
+  border: groove red 5px;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: solid royalblue 1px;
+}
+.form input:hover {
+  border: solid blue 1px;
+}
+.form input[type="submit"] {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 16px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.form input[type="submit"]:hover,.form input[type="submit"]:active,.form input[type="submit"]:focus {
+  background: green;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: black;
+  font-size: 12px;
+}
+.form .message a:hover {
+  color: blue;
+}
+.form .message a {
+  color: royalblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  margin: 0px;
+  background-size: cover;
+  background-image: url(795599-2017-02-19.jpg);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: blue;
+  background-color: lightgreen;
+}
+.fo {
+    padding: 10px;
+    background: #ddd;
+    background-color: black;
+    opacity: 0.8;
+}
+.fo .cop {
+    text-align: left;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: grey;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+#lo {
+	background: chocolate;
+	color: white;
+
+	letter-spacing: 3px;
+}
+</style>
+</head>
+
+<body>
+  <div style="background-image: url(36166597-retro-comic-book-style-cartoon-spectacles.jpg);background-size: 200px 100px;background-position: left;background-repeat: no-repeat;background-color: white">
+  <a href="winkieye.html"><img src="win.jpg" width="150px" height="100px" hspace="43%"></a></div>
+  <marquee bgcolor="red" height="40px"><font size="+3" style="color: yellow;font-weight: bold">SIGNUP AND GET YOUR FIRST FRAME FREE</font></marquee>
+<div class="login-page">
+  <div class="form">
+    <h1 id="lo">LogIn</h1>
+    <form class="login-form" action="file:///C:/Users/ashut/Desktop/Html%20folder/image/winkieye.html#login">
+      <input type="text" placeholder="Email_id or Phone no." onclick="inpu()" onblur="rel()" id="put" required/>
+      <input type="password" placeholder="Password" onclick="inp()" id="put1" onblur="rel1()" required/>
+      <input type="submit" value="Login">
+      <p class="message">Not registered? <a href="form.html">Create an account</a></p>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});</script>
+
+<script type="text/javascript">
+	function inpu()
+	{
+		document.getElementById('put').style.border = "solid blue 2px";
+	}
+	function rel()
+	{
+		document.getElementById('put').style.border = "solid royalblue 1px";
+	}
+	function inp()
+	{
+		document.getElementById('put1').style.border = "solid blue 2px";
+	}
+	function rel1()
+	{
+		document.getElementById('put1').style.border = "solid royalblue 1px";
+	}
+</script>
+
+<div class="fo">
+      <a href="#" class="cop">Copyright &copy; 2018 All right reserved</a>
+  </div>
+</body>
+</html>

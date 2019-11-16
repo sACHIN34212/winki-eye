@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>www.winkieye.com/signup</title>
+<style>
+	body {
+		margin: 0px;
+		background-image: url(795599-2017-02-19.jpg);
+		background-size: cover;
+	}
+	fieldset {
+border: solid black 1px;
+background-size: cover;
+background: lightcyan;
+padding: 42px 16px;
+font-size: 20px;
+margin: 50px 450px;
+box-shadow: 0 0 20px 0 rgba(0, 0,0, 1), 0 50px 50px 0 rgba(0, 0, 0, 1);
+	}
+	::placeholder {
+	color: black;
+	opacity: 0.7;
+}
+
+	input[type="text"] {
+		width: 350px;
+		height: 30px;
+		border-radius: 0%;
+		border: 0px;
+        font-size: 20px;
+        background: transparent;
+        border-bottom: solid black 1px; 
+	}
+	.in {
+		border: 0px;
+		width: 350px;
+		height: 30px;
+		font-size: 20px;
+		background: transparent;
+        border-bottom: solid black 1px; 
+	}
+	.inp {
+		border: 0px;
+		width: 174px;
+		height: 30px;
+		font-size: 20px;
+		background: transparent;
+        border-bottom: solid black 1px; 
+	}
+	legend {
+		border-left: solid red 10px;
+		color: blue;
+		font-weight: bold;
+		font-size: 30px;
+		background: lightgrey;
+	}
+	#sin {
+		height: 50px;
+		width: 150px;
+		border: 0px;
+		font-size: 25px;
+		font-weight: bold;
+		color: red;
+	    background-color: yellow;
+	}
+	#sin:hover {
+		background-color: red;
+		color: yellow;
+		border: groove darkgrey;
+	}
+	#res {
+		height: 50px;
+		width: 150px;
+		border: 0px;
+		font-size: 25px;
+		font-weight: bold;
+		color: yellow;
+	    background-color: red;
+	}
+	#res:hover {
+		background-color: yellow;
+		color: red;
+		border: groove darkgrey;
+	}
+	input[name="m"]{
+		height: 18px;
+		width: 20px;
+	}
+	::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+.fo {
+    padding: 10px;
+    background: #ddd;
+    background-color: black;
+    opacity: 0.8;
+}
+.fo .cop {
+    text-align: left;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: grey;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+</style>
+</head>
+
+<body>
+	<div style="background-image: url(36166597-retro-comic-book-style-cartoon-spectacles.jpg);background-size: 200px 100px;background-position: left;background-repeat: no-repeat;background-color: white">
+	<a href="winkieye.html"><img src="win.jpg" width="150px" height="100px" hspace="43%"></a></div>
+	<marquee bgcolor="red" height="40px"><font size="+3" style="color: yellow;font-weight: bold">SIGNUP AND GET YOUR FIRST FRAME FREE</font></marquee>
+	<br>
+	<form action="file:///C:/Users/ashut/Desktop/Html%20folder/image/log.html" method="post" name="form" onsubmit="return validateForm()">
+		<fieldset>
+			<legend>SIGNUP</legend>
+		<label for="fname"><b><u>FIRST NAME</u></b>: </label><br><input type="text" name="fname" placeholder="First_Name" required="" /><br><br>
+		<label for="lname"><b><u>LAST NAME</u></b>:</label><br>
+		<input type="text" name="lname" placeholder="Last_Name" required/><br><br>
+		<label for="m"><b><u>Gender</u></b>:</label> <input type="radio" name="m" value="Male" id="M" checked="check" required/><label for="Male" style="color: blue;"><b>Male</b></label> &nbsp;
+		<input type="radio" name="m" value="Female" required/><label for="Female" style="color: deeppink;"><b>Female</b></label> &nbsp;
+		<input type="radio" name="m" value="Other" required/><label for="Other" style="color: orangered;"><b>Other</b></label><br><br>
+		<b><u>Date Of Birth</u></b>: <br><input type="date" value="date" class="inp" required/><br><br>
+		<b><u>Country</u></b>: <select class="inp" required>
+			<optgroup label="Country:">
+		<option value="0">India</option>
+		<option>Pakistan</option>
+		<option>Afganistan</option>
+		<option>Australia</option>
+		<option>Canada</option>
+		<option>England</option></optgroup>
+		</select><br><br>
+		<b><u>Email</u></b>: <br><input type="email" name="Email" placeholder="Email_id" class="in" required/><br><br>
+		<b><u>Phone No.</u></b>: <br><input type="number" name="Phone_No." placeholder="Phone No." class="in" maxlength="10" required/><br><br>
+		<b><u>Password</u></b>: <br><input type="password" name="Password" placeholder="Password" class="in" maxlength="20" id="pass" onkeyup="check();" required/><br><br>
+		<input type="checkbox" onclick="myFunction()"><a>Show Password</a><br><br>
+		<b><u>Repeat Password</u></b>: <br><input type="password" name="Password-repeat" placeholder="Repeat Password" class="in" id="rep" maxlength="20" onkeyup="check();" required/><br><span id='message'></span><br><br>
+		<input type="submit" name="Sign Up" value="Sign Up" id="sin"/>&nbsp;&nbsp;
+		<input type="reset" name="reset" value="Reset" id="res"/>
+		
+		</br>
+		</br>
+		<a href="log.html" style=" Text-Decoration: none;">Already signup, Login?</a>
+		</fieldset>
+	</form>
+	<script type="text/javascript">
+	function myFunction() {
+    var x = document.getElementById("pass");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}</script>
+<script type="text/javascript">
+	function validateForm(){
+	var name=document.forms["form"]["fname"].value;
+		if(name!=null && name!="")
+		{
+		window.alert("Submitted successfully");
+		return true;}
+		else
+		{
+			window.alert("Fill the details carefully");
+			return false;
+		}}
+</script>
+<script type="text/javascript">
+	var check = function() {
+  if (document.getElementById('pass').value ==
+    document.getElementById('rep').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'Matched';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'Not Match';
+  }
+}
+</script>
+
+<div class="fo">
+      <a href="" class="cop">Copyright &copy; 2018 All right reserved</a>
+  </div>
+</body>
+</html>
